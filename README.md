@@ -5,12 +5,12 @@ This repository contains the official PyTorch implementation of our WACV 2025 pa
 ## Abstract
 Few-shot class incremental learning implies the model to learn new classes while retaining knowledge of previously learned classes with a small number of training instances. Existing frameworks typically freeze the parameters of the previously learned classes during the incorporation of new classes. However, this approach often results in suboptimal class separation of previously learned classes,  leading to overlap between old and new classes. Consequently, the performance of old classes degrades on new classes. To address these challenges, we propose a novel feature augmentation driven contrastive learning framework designed to enhance the separation of previously learned classes to accommodate new classes. Our approach involves augmenting feature vectors and assigning proxy labels to these vectors. This strategy expands the feature space, ensuring seamless integration of new classes within the expanded space. Additionally, we employ a self-supervised contrastive loss to improve the separation between previous classes. We validate our framework through experiments on three FSCIL benchmark datasets: CIFAR100, miniImageNet, and CUB200. The results demonstrate that our Feature Augmentation driven Contrastive Learning framework significantly outperforms other approaches, achieving state-of-the-art performance.
 
-<img src='imgs/wacv2025_introduction.png' width='700' height='460'>
+<img src='imgs/wacv2025_introduction.png' width='500' height='330'>
 
 ## Architecture
 The complete learning workflow of our model:
 
-<img src='imgs/wacv2025_methodology.png' width='900' height='454'>
+<img src='imgs/wacv2025_methodology.png' width='900' height='600'>
 
 ## Results
 Performance Comparison on CIFAR100 Dataset **Average Acc.**: Average accuracy across all sessions. **ΔFI**: Improvement in performance compared to the fine-tune baseline in the last session. **PD**: Difference in performance between the first and last session.
